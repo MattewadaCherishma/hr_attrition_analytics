@@ -15,4 +15,4 @@ SQL (MySQL), Python (Pandas), Power BI
 3. Introduce structured onboarding and 90-day check-ins to reduce early-tenure attrition
 
 ## Dashboard
-![Dashboard Screenshot](dashboard_screenshot.png)
+![Dashboard Screenshot](dashboard.png)
