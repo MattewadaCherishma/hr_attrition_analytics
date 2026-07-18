@@ -16,3 +16,4 @@ SQL (MySQL), Python (Pandas), Power BI
 
 ## Dashboard
 ![Dashboard Screenshot](dashboard.png)
+[Full Project Documentation (PDF)](Project_Documentation.pdf)
