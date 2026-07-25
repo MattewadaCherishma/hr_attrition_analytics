@@ -18,6 +18,13 @@ SQL (MySQL), Python (Pandas), Power BI
 ## Dashboard
 ![Dashboard Screenshot](dashboard.png)
 
+The dashboard combines two KPI cards — Total Headcount (1.47K) and Attrition Rate (21.63%) — with three visuals:
+- Attrition by Department — compares attrition across Human Resources, Research & Development, and Sales
+- Attrition by OverTime Status — highlights the sharp difference in attrition between employees who work overtime and those who don't
+- Attrition by Tenure (Years at Company)** — shows attrition dropping off as employee tenure increases
+
+Together, these give a quick, at-a-glance view of where attrition risk is concentrated across the organization.
+
 📄 [Full Project Documentation (PDF)](project_documentation.pdf)
 
 ## Department-Level Analysis (SQL JOIN)
