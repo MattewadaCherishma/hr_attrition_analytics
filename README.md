@@ -20,4 +20,10 @@ SQL (MySQL), Python (Pandas), Power BI
 
 📄 [Full Project Documentation (PDF)](project_documentation.pdf)
 
-![department_join_query](department_join_query.png)
+## Department-Level Analysis (SQL JOIN)
+
+To enrich the attrition analysis beyond single-table aggregation, a `department_info2` reference table was added containing department leadership and location metadata. A SQL JOIN was used to combine this with the main `employees` table, enabling attrition analysis broken down by department head and location — not just department name.
+
+![Department Join Query](department_join_query.png)
+
+*Query and output showing department-level attrition rate enriched with department head and location via SQL JOIN.*
