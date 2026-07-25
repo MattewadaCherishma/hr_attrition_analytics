@@ -62,3 +62,4 @@ FROM employees e
 JOIN department_info2 d ON e.Department = d.Department
 GROUP BY e.Department, d.DepartmentHead, d.Location
 ORDER BY attrition_rate_pct DESC;
+
