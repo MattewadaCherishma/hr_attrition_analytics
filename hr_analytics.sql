@@ -41,3 +41,24 @@ select
 from hr_analytics.employees
 group by tenure_bucket
 order by min(YearsAtCompany);
+
+use hr_analytics;
+CREATE TABLE department_info2 (
+    Department VARCHAR(50) PRIMARY KEY,
+    DepartmentHead VARCHAR(50),
+    Location VARCHAR(50)
+);
+
+INSERT INTO department_info2 VALUES
+('Sales', 'R. Sharma', 'Hyderabad'),
+('Research & Development', 'A. Rao', 'Warangal'),
+('Human Resources', 'S. Reddy', 'Hyderabad');
+
+#sql join
+SELECT e.Department, d.DepartmentHead, d.Location,
+       COUNT(*) AS headcount,
+       ROUND(100.0 * SUM(CASE WHEN e.Attrition = 'Yes' THEN 1 ELSE 0 END) / COUNT(*), 1) AS attrition_rate_pct
+FROM employees e
+JOIN department_info2 d ON e.Department = d.Department
+GROUP BY e.Department, d.DepartmentHead, d.Location
+ORDER BY attrition_rate_pct DESC;
